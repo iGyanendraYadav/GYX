@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   let Pages = [
-    { name: "Vlogs", link: "#services" },
-    { name: "Gallery", link: "#works" },
-    { name: "Social", link: "#experience" },
-    { name: "Reels", link: "#skills" },
-    { name: "About", link: "#contact" },
+    { name: "Vlogs", link: "/vlogs" },
+    { name: "Gallery", link: "/gallery" },
+    { name: "Social", link: "/social" },
+    { name: "Reels", link: "/reels" },
+    { name: "About", link: "/about" },
   ];
   const [open, setOpen] = useState(false);
 
@@ -16,11 +17,11 @@ const Header = () => {
       <div className="shadow-md w-full  fixed top-0 left-0 font-[Poppins] z-10">
         <div className="md:flex justify-between md:justify-between lg:justify-between 2xl:justify-center items-center text-gray-700 dark:text-gray-100 bg-gray-200 dark:bg-gray-800 py-4 md:py-2 px-7 md:px-5 lg:px-20 2xl:mx-auto 2xl:container">
           <div className="font-bold text-2xl cursor-pointer flex items-center space-x-[6.5rem] md:space-x-10 lg:space-x-60 text-gray-800 md:max-w-screen-md lg:max-w-screen-2xl">
-            <a href="#hero">
+            <Link to="/">
               <span className="text-2xl md:text-2xl lg:text-3xl mr-1 pt-2 text-gray-700 dark:text-gray-100 ">
                 GYX
               </span>
-            </a>
+            </Link>
           </div>
           <div
             onClick={() => setOpen(!open)}
@@ -50,7 +51,7 @@ const Header = () => {
                   key={i}
                   className="md:ml-8 text-xl md:my-0 my-2 p-2 indent-5 lg:indent-0  cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-900  lg:hover:bg-transparent dark:lg:hover:bg-transparent "
                 >
-                  <a href={page.link}>{page.name}</a>
+                  <Link to={page.link}>{page.name}</Link>
                 </li>
               );
             })}

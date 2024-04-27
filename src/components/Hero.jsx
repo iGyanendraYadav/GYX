@@ -2,6 +2,7 @@ import React from "react";
 import instaPost1 from "./images/InstaPost1.jpg";
 import instaPost2 from "./images/InstaPost2.jpg";
 import instaPost10 from "./images/InstaPost10.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,12 +30,12 @@ const Hero = () => {
                 repellat.
               </p>
 
-              <a
-                href="#"
+              <Link
+                to="/vlogs"
                 className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
               >
-                Watch on YouTube
-              </a>
+                Watch My Vlogs
+              </Link>
             </div>
           </div>
         </div>
@@ -56,12 +57,12 @@ const Hero = () => {
                   </p>
                 </header>
 
-                <a
-                  href="#"
+                <Link
+                  to="/gallery"
                   className="mt-8 inline-block rounded border border-gray-900 bg-gray-900 px-12 py-3 text-sm font-medium text-white transition hover:shadow focus:outline-none focus:ring"
                 >
                   Show All
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -107,12 +108,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-
-      <span className="relative flex justify-center">
-        <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
-
-        <span className="relative z-10 bg-white px-6">Lorem, ipsum dolor</span>
-      </span>
     </div>
   );
 };

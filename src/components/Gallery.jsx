@@ -3,11 +3,11 @@ import { myPictures } from "./data/mydata";
 
 const Gallery = () => {
   return (
-    <div className="container flex flex-col justify-center items-center space-y-3">
+    <div className="container flex flex-col justify-center items-center space-y-3 font-poppins">
       <div className="flex flex-col justify-center items-center space-y-2">
-        <h className="text-5xl font-extrabold text-gray-700 uppercase tracking-widest">
+        <h1 className="text-5xl font-extrabold text-gray-700 uppercase tracking-widest">
           Wonderful
-        </h>
+        </h1>
         <h2 className="text-4xl font-extrabold text-gray-700 uppercase tracking-widest">
           Pictures
         </h2>

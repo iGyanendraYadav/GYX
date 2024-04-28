@@ -3,7 +3,7 @@ import InstaPost1 from "../components/images/InstaPost1.jpg";
 
 const About = () => {
   return (
-    <div className="container mx-auto pt-5 lg:pt-32">
+    <div className="container mx-auto pt-5 lg:pt-32 font-poppins">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-3xl lg:text-5xl text-gray-600 font-extrabold tracking-widest uppercase">
           Don't Know Me ?

@@ -3,10 +3,11 @@ import instaPost1 from "./images/InstaPost1.jpg";
 import instaPost2 from "./images/InstaPost2.jpg";
 import instaPost10 from "./images/InstaPost10.jpg";
 import { Link } from "react-router-dom";
+import { FaArrowCircleRight, FaArrowRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="container mx-auto mt-10 lg:mt-5">
+    <div className="container mx-auto mt-10 lg:mt-5 font-poppins">
       <section>
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -105,6 +106,31 @@ const Hero = () => {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="flex flex-col justify-center items-center">
+          <span className="text-2xl lg:text-3xl text-gray-600 font-bold uppercase">
+            Connect with Me
+          </span>
+          <span className="text-lg lg:text-xl text-gray-600 px-10 lg:px-32 py-5 lg:py-10">
+            Hey, I want to share you a lot of things like amazing visuals, vibe,
+            energetic and awesome moments, vlogs , pictures and offcourse reels.
+            So you can follow me on Instagram, YouTube & Facebook. I will always
+            try to respond to your comments and DMs.
+          </span>
+          <div className="flex flex-row justify-center items-center">
+            <Link
+              to="/social"
+              className="mt-2 flex rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400  flex-row justify-center items-center space-x-2"
+            >
+              <span>Take Me 2 Social</span>{" "}
+              <span>
+                <FaArrowRight />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

@@ -11,6 +11,7 @@ import Social from "./components/Social";
 import Reels from "./components/Reels";
 import About from "./components/About";
 import Error from "./components/Error";
+import Common from "./components/Common";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
           <Route path="/*" element={<Error />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
+      <Common />
     </>
   );
 }
